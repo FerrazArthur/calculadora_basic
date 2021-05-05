@@ -73,7 +73,7 @@ int ehPerfeito(int valor1)
        for(int i = 2; i <= valor1 / 2; i++)
            if(valor1 % i == 0)
                soma += i;
-       if(soma == valor1)
+       if(soma == valor1 && soma != 1)
            return 1; 
    }
    catch(exception& e)
