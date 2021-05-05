@@ -1,3 +1,4 @@
+//Integrantes: Arthur Ferraz, Eric Rabelo, Luiz Falqueto
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -23,9 +24,9 @@ double divide(double valor1, double valor2)
         if(valor2 != 0)
             return valor1 / valor2;
         else
-            throw "Erro durante operação: Tentativa de dividir por zero.\n";
+            throw runtime_error("Erro durante operação: Tentativa de dividir por zero.\n");
     }
-    catch(exception e)
+    catch(exception& e)
     {
         cerr<<"Ocorreu um "<<e.what();
     }
@@ -66,18 +67,16 @@ int ehMultiplo5(int valor5)
 int ehPerfeito(int valor1)
 {
    try{
-       int soma = 0;
+       int soma = 1;
        if(valor1 < 0)
-           throw "Erro: função ehPerfeito não possui portabilidade para números negativos ainda\n";
-       for(int i = 1; i < valor1 && soma < valor1; i++)
-       {
+           throw runtime_error("Erro: função ehPerfeito não possui portabilidade para números negativos ainda\n");
+       for(int i = 2; i <= valor1 / 2; i++)
            if(valor1 % i == 0)
                soma += i;
-           if( soma == valor1)
-               return 1; 
-       }
+       if(soma == valor1)
+           return 1; 
    }
-   catch(exception e)
+   catch(exception& e)
    {
        cerr<<e.what();
    }
@@ -112,7 +111,7 @@ void executaUm(int (*op) (auto))
         if(val1 > val2)
             cout<<"intervalo inválido, por favor insira um limite superior que seja >>superior<< ao limite inferior!\n";
     }while(val1 > val2);
-    while(val1 < val2)
+    while(val1 <= val2)
         aux.push_back(val1++);
     for(int i = 0; i < aux.size(); i++)
         (*op) (aux[i])? cout<<aux[i]<<" testou positivo\n": cout;
