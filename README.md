@@ -14,7 +14,7 @@ S - exit</p>
 - - subtract two values<br>
 * - multiply two values<br>
 / - divide two values<br>
-v - go back previous menu</p>
+V - go back previous menu</p>
 
 #### Test operators
 
