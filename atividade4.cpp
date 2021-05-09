@@ -1,4 +1,3 @@
-//Integrantes: Arthur Ferraz, Eric Rabelo, Luiz Falqueto
 #include<iostream>
 #include<vector>
 using namespace std;
