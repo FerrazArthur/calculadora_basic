@@ -1,2 +1,30 @@
-# calculadoraLP
-Atividade de Linguagens de Programação
+# Basic calculator
+
+#### Main menu
+
+<p>A - open algebric menu<br>
+T - open tests menu<br>
+S - exit</p>
+
+#### Arithmetic operators
+
+><p>prompt user for two double values after he
+>choose a option.</p>
+<p>+ - sum two values<br>
+- - subtract two values<br>
+* - multiply two values<br>
+/ - divide two values<br>
+v - go back previous menu</p>
+
+#### Test operators
+
+><p>prompt user for two integer values after he
+>choose a option.<br>Keep asking until the first
+>integer is smaller than the second.</p>
+<p>2 - even<br>
+I - odd<br>
+P - prime<br>
+F - perfect<br>
+5 - multiple of 5<br>
++ - positive<br>
+V - go back previous menu</p>
