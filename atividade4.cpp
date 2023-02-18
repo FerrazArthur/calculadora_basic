@@ -3,8 +3,8 @@
 using namespace std;
 
 //para todas os retornos de função:
-//return 1 -> false
-//return 0 -> true
+//return 0 -> false
+//return 1 -> true
 
 double soma(double valor1, double valor2)
 {
@@ -40,7 +40,7 @@ int ehPrimo(int valor1)
 {
     for(int i = 2; i < valor1/2.0; i++)
         if(valor1%i == 0)
-            return false;
+            return 0;
     return 1;
 }
 
