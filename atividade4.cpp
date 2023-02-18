@@ -1,6 +1,11 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+//para todas os retornos de função:
+//return 1 -> false
+//return 0 -> true
+
 double soma(double valor1, double valor2)
 {
     return valor1+valor2;
@@ -89,6 +94,7 @@ int ehPositivo(double valor1)
 
 void executaDois(double (*op) (double, double))
 {
+    //input: função genérica que recebe duas variáveis double
     double val1, val2;
     cout<<"insira o valor 1:\n";
     cin>>val1;
@@ -99,6 +105,7 @@ void executaDois(double (*op) (double, double))
 
 void executaUm(int (*op) (auto))
 {
+    //input: função genérica que recebe uma variável qualquer
     double val1, val2;
     vector<int> aux;
     do
