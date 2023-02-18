@@ -1,4 +1,8 @@
+
 # Basic calculator
+
+## Context
+<p>This calculator is a college project for the discipline of programming languages</p>
 
 #### Main menu
 
