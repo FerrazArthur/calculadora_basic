@@ -1,6 +1,14 @@
 
 # Basic calculator
 
+## Instructions to use
+
+<p>clone this repository and open terminal inside the folder then type:<\p>
+> <p>make<\p>
+<p>To compile and create the executable<\p>
+> <p>./calculadora<\p>
+<p>To execute the calculator<\p>
+
 ## Context
 <p>This calculator is a college project for the discipline of programming languages</p>
 
